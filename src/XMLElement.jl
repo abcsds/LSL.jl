@@ -18,7 +18,7 @@ The LSLXMLElement type allows manipulation of the stream description of a Stream
 struct LSLXMLElement
   handle::lib.lsl_xml_ptr
 
-  function LSLXMLElement(handle) where T
+  function LSLXMLElement(handle)
     if handle != C_NULL
       elem = new(handle)
     else
